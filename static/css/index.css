@@ -290,6 +290,26 @@ body {
   font-weight: 500;
 }
 
+.dataset-samples-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dataset-sample-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.dataset-sample-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -646,6 +666,10 @@ code {
     margin: 0.5rem;
     padding: 1rem;
   }
+
+  .dataset-samples-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   
   .teaser .hero-body {
     padding: 1rem;
@@ -693,6 +717,10 @@ code {
   .button {
     width: 100%;
     justify-content: center;
+  }
+
+  .dataset-samples-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -748,6 +776,5 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
 
 
