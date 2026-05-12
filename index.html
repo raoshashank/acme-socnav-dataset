@@ -151,53 +151,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -264,7 +217,7 @@
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -272,10 +225,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -283,10 +236,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -294,16 +247,16 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -320,14 +273,14 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="institution-logos-grid">
-        <img src="static/images/logos/nus.jpg" alt="National University of Singapore" loading="lazy">
+        <img src="static/images/logos/nus.png" alt="National University of Singapore" loading="lazy">
         <img src="static/images/logos/miraikan.png" alt="Miraikan" loading="lazy">
         <img src="static/images/logos/cmu.png" alt="Carnegie Mellon University" loading="lazy">
         <img src="static/images/logos/gmu.png" alt="George Mason University" loading="lazy">
         <img src="static/images/logos/keio.png" alt="Keio University" loading="lazy">
         <img src="static/images/logos/ssi.png" alt="SSI" loading="lazy">
         <img src="static/images/logos/ubonn.png" alt="University of Bonn" loading="lazy">
-        <img src="static/images/logos/uex.jpg" alt="Universidad de Extremadura" loading="lazy">
+        <img src="static/images/logos/uex.png" alt="Universidad de Extremadura" loading="lazy">
         <img src="static/images/logos/umich.png" alt="University of Michigan" loading="lazy">
         <img src="static/images/logos/ewha.png" alt="Ewha Womans University" loading="lazy">
       </div>
@@ -335,6 +288,42 @@
   </div>
 </section>
 <!-- End institution logos -->
+
+
+<!-- Dataset stats bar -->
+<section class="hero is-small dataset-stats-section">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="dataset-stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">31.1 hrs</div>
+          <div class="stat-label">Robot Onboard Data</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">43.5 hrs</div>
+          <div class="stat-label">BEV Camera Data</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">72,058</div>
+          <div class="stat-label">Pedestrian Trajectories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">8</div>
+          <div class="stat-label">Institutions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">7</div>
+          <div class="stat-label">Robot Embodiments</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset stats bar -->
 
 
 <!-- DISABLED: Teaser video — uncomment to restore
@@ -434,76 +423,372 @@
 -->
 
 
-<!-- Dataset sample video grid -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Dataset Samples</h2>
-      <div class="dataset-samples-grid">
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="CMU dataset sample" aria-label="CMU dataset sample">
-            <source src="static/videos/data_samples/cmu.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="GMU dataset sample" aria-label="GMU dataset sample">
-            <source src="static/videos/data_samples/gmu.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="Keio dataset sample" aria-label="Keio dataset sample">
-            <source src="static/videos/data_samples/keio.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="Miraikan dataset sample" aria-label="Miraikan dataset sample">
-            <source src="static/videos/data_samples/miraikan.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="NUS dataset sample" aria-label="NUS dataset sample">
-            <source src="static/videos/data_samples/nus.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="University of Bonn dataset sample" aria-label="University of Bonn dataset sample">
-            <source src="static/videos/data_samples/ubonn.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="Universidad de Extremadura dataset sample" aria-label="Universidad de Extremadura dataset sample">
-            <source src="static/videos/data_samples/uex.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="dataset-sample-card">
-          <video controls muted loop preload="metadata" title="University of Michigan dataset sample" aria-label="University of Michigan dataset sample">
-            <source src="static/videos/data_samples/umich.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End dataset sample video grid -->
-
-
 <!-- Onboard Sensor Data -->
 <section class="hero is-small is-light results-section">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Onboard Sensor Data</h2>
 
+      <div class="dataset-samples-grid" style="margin-bottom: 2rem;">
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="CMU dataset sample" aria-label="CMU dataset sample">
+              <source src="static/videos/data_samples/cmu.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/cmu.png" alt="Carnegie Mellon University" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="GMU dataset sample" aria-label="GMU dataset sample">
+              <source src="static/videos/data_samples/gmu.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/gmu.png" alt="George Mason University" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="Keio dataset sample" aria-label="Keio dataset sample">
+              <source src="static/videos/data_samples/keio.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/keio.png" alt="Keio University" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="Miraikan dataset sample" aria-label="Miraikan dataset sample">
+              <source src="static/videos/data_samples/miraikan.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/miraikan.png" alt="Miraikan" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="NUS dataset sample" aria-label="NUS dataset sample">
+              <source src="static/videos/data_samples/nus.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/nus.png" alt="National University of Singapore" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="University of Bonn dataset sample" aria-label="University of Bonn dataset sample">
+              <source src="static/videos/data_samples/ubonn.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/ubonn.png" alt="University of Bonn" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="Universidad de Extremadura dataset sample" aria-label="Universidad de Extremadura dataset sample">
+              <source src="static/videos/data_samples/uex.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/uex.png" alt="Universidad de Extremadura" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="dataset-sample-card">
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata" title="University of Michigan dataset sample" aria-label="University of Michigan dataset sample">
+              <source src="static/videos/data_samples/umich.mp4" type="video/mp4">
+            </video>
+            <div class="dataset-sample-logo-overlay">
+              <img src="static/images/logos/umich.png" alt="University of Michigan" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="results-subsection">
         <h3 class="title is-4">Data Format</h3>
         <div class="content">
-          <!-- TODO: describe onboard sensor data format; add figures/tables as needed. -->
+          <p>
+            Onboard robot data is released in two complementary formats. <strong>Raw ROS2 bag files</strong> contain all
+            recorded topics in their original message formats, with each bag corresponding to a single trajectory.
+            <strong>Pre-processed human-readable data</strong> is uniformly sampled at <strong>4&nbsp;Hz</strong> and
+            organized hierarchically: each institution has a dedicated folder, within which each trajectory is a
+            separate subfolder named with location and recording-date metadata. Inside each trajectory folder,
+            per-modality subfolders contain time-synchronized files named by timestamp index
+            (<code>index.extension</code>).
+          </p>
+          <p>The following data streams are available per trajectory:</p>
+          <ul>
+            <li><strong>Odometry</strong> — CSV with timestamp, X/Y position (odom frame), yaw, and linear/angular velocities.</li>
+            <li><strong>Egocentric RGB images</strong> — stored as JPEG; some institutions (e.g., GMU, UEx) provide additional 360° views.</li>
+            <li><strong>LiDAR point clouds</strong> — PCD format from onboard 3D LiDARs.</li>
+            <li><strong>Robot speech</strong> — 2-column CSV with timestamp and utterance string (NUS, UEx, Miraikan, Keio subsets).</li>
+            <li><strong>Sensor calibration</strong> — binary static transforms, camera intrinsics text files.</li>
+            <li><strong>Scenario tags</strong> — CSV mapping trajectory names to scene/pedestrian scenario tags.</li>
+          </ul>
+
+          <p>
+            Trajectories were segmented using <em>Begin / Discard / End</em> event markers logged during teleoperation,
+            discarding any segments where the robot behaved erratically or the teleoperator was approached for conversation.
+          </p>
+
+          <p>The table below summarises the hardware and data duration for each contributing institution:</p>
+
+          <div style="overflow-x:auto;">
+            <table class="dataset-overview-table">
+              <thead>
+                <tr>
+                  <th>Institution</th>
+                  <th>Robot Platform</th>
+                  <th>Sensors</th>
+                  <th>Pose Estimate</th>
+                  <th>BEV Camera</th>
+                  <th>Robot Data (hrs)</th>
+                  <th>BEV Data (hrs)</th>
+                  <th>BEV Trajectories</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="institution-name">NUS</td>
+                  <td>Unitree GO2</td>
+                  <td>RealSense D435i, Hesai XT-16</td>
+                  <td>LiDAR Odometry</td>
+                  <td>GoPro Hero9</td>
+                  <td>6.54</td>
+                  <td>10.01</td>
+                  <td>31,848</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">Miraikan</td>
+                  <td>Suitcase Robot</td>
+                  <td>RealSense D435i, Velodyne VLP-16</td>
+                  <td>LiDAR Localization</td>
+                  <td>GoPro Hero12</td>
+                  <td>9.43</td>
+                  <td>12.39</td>
+                  <td>21,322</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">CMU</td>
+                  <td>Suitcase Robot</td>
+                  <td>Zed 2, Velodyne VLP-16</td>
+                  <td>LiDAR Localization</td>
+                  <td>GoPro Hero10</td>
+                  <td>1.56</td>
+                  <td>2.65</td>
+                  <td>1,987</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">Keio</td>
+                  <td>Suitcase Robot</td>
+                  <td>RealSense D435i, Velodyne VLP-16</td>
+                  <td>LiDAR Localization</td>
+                  <td>GoPro Hero12</td>
+                  <td>1.64</td>
+                  <td>3.84</td>
+                  <td>5,095</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">UMich</td>
+                  <td>Stretch 2</td>
+                  <td>RealSense D435i, Velodyne VLP-16</td>
+                  <td>Wheel Odometry</td>
+                  <td>GoPro Hero13</td>
+                  <td>3.20</td>
+                  <td>5.10</td>
+                  <td>3,728</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">UEx</td>
+                  <td>Shadow Robot</td>
+                  <td>Zed 2i, Ricoh Theta Z1, Robosense BPearl &amp; Helios</td>
+                  <td>Visual-Inertial Odometry, LiDAR Localization</td>
+                  <td>—</td>
+                  <td>3.29</td>
+                  <td>—</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">GMU</td>
+                  <td>Scout Mini</td>
+                  <td>Zed 2, Velodyne VLP-16</td>
+                  <td>Wheel Odometry</td>
+                  <td>Logitech C920</td>
+                  <td>3.45</td>
+                  <td>2.30</td>
+                  <td>3,186</td>
+                </tr>
+                <tr>
+                  <td class="institution-name">UBonn</td>
+                  <td>Unitree GO1</td>
+                  <td>GoPro, Velodyne VLP-16</td>
+                  <td>LiDAR Odometry</td>
+                  <td>GoPro Hero12</td>
+                  <td>2.43</td>
+                  <td>7.27</td>
+                  <td>4,892</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="analysis-figure-row" style="margin-top:1.5rem;">
+            <figure>
+              <img src="static/images/data/labelling_tool.png"
+                   alt="Human trajectory verification annotation tool UI"
+                   loading="lazy">
+              <figcaption>Human verification tool used to correct ByteTrack trajectory errors (relabel, break, join, delete, disentangle).</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/data/labelling_tool_semantic_tag.png"
+                   alt="Scenario tagging annotation tool UI"
+                   loading="lazy">
+              <figcaption>Scenario tagging tool used to label robot trajectories with location-based and pedestrian-centric tags.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
       <div class="results-subsection">
         <h3 class="title is-4">Analysis</h3>
         <div class="content">
-          <!-- TODO: onboard sensor data analysis; embed result figures from static/images/results/. -->
+
+          <p>
+            We characterize scenario complexity along three axes: <strong>pedestrian density</strong>,
+            <strong>traversability</strong>, and <strong>degree of social compliance</strong> (measured via
+            geometric planner failures). Compared to SCAND and MuSoHu, ACME captures scenarios with
+            higher crowd density closer to the robot and lower traversable space, reflecting its focus
+            on challenging, goal-directed social navigation.
+          </p>
+
+          <!-- Scenario tag distribution -->
+          <h4 class="culture-section-title">Scenario Distribution</h4>
+          <div class="analysis-figure">
+            <img src="static/images/results/scenario_tag_frequencies_pie.svg"
+                 alt="Distribution of location-specific and pedestrian-centric scenario tags in ACME"
+                 loading="lazy"
+                 style="max-width: 780px;">
+            <figcaption>
+              Distribution of scenario tags across ACME trajectories. Location tags (left) include narrow/wide
+              corridors, intersections, blind corners, open areas, and entries/exits. Pedestrian-centric tags (right)
+              include against traffic, with traffic, passing conversational groups, overtaking, and more.
+            </figcaption>
+          </div>
+
+          <!-- Density & traversability -->
+          <h4 class="culture-section-title">Pedestrian Density &amp; Traversability</h4>
+          <div class="analysis-figure-row">
+            <figure>
+              <img src="static/images/results/combined_trimmed_people_density_analysis_nus.svg"
+                   alt="Pedestrian density analysis comparing ACME, SCAND, and MuSoHu"
+                   loading="lazy">
+              <figcaption>Pedestrian density and traversability comparison across ACME, SCAND, and MuSoHu datasets. ACME captures a higher proportion of socially constrained scenes.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/results/hausdorff_distribution_nus.svg"
+                   alt="Hausdorff distance distribution and geometric planner failure rates"
+                   loading="lazy">
+              <figcaption>Hausdorff distances and TEB planner failure rates show ACME scenes are significantly more challenging for off-the-shelf geometric planners.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Robot speech analysis -->
+          <h4 class="culture-section-title">Robot Speech Analysis</h4>
+          <p>
+            Trajectories collected at NUS, UEx, Miraikan, and Keio include robot speech annotations.
+            Three utterances were available: <em>"Excuse Me / Please Give Way"</em> (used when navigating
+            through crowds requiring passage) and <em>"Attention, Robot Here"</em> (used as an awareness
+            cue in low-visibility or distracted-pedestrian situations).
+          </p>
+          <div class="speech-analysis-grid">
+            <figure>
+              <img src="static/images/data/nus_trav_ped_speech.png"
+                   alt="Robot speech usage at NUS vs pedestrian density and traversability"
+                   loading="lazy">
+              <figcaption>NUS (quadruped, teleoperated) — speech spans a wide range of densities, consistent with lower visual salience of the small robot.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/data/uex_trav_ped_speech.png"
+                   alt="Robot speech usage at UEx vs pedestrian density and traversability"
+                   loading="lazy">
+              <figcaption>UEx (Shadow robot, teleoperated) — "Attention Robot Here" concentrated at lower densities; "Excuse Me/Give Way" in crowded scenes.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/data/japan_trav_ped_speech.png"
+                   alt="Robot speech usage at Miraikan and Keio vs pedestrian density and traversability"
+                   loading="lazy">
+              <figcaption>Miraikan &amp; Keio (suitcase robots, human-operated) — speech occurs less frequently and at higher traversability proportions compared to teleoperated robots.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Navigation model benchmark -->
+          <h4 class="culture-section-title">Vision Navigation Model Benchmark</h4>
+          <p>
+            We benchmark ViNT and NoMAD — two state-of-the-art foundational vision navigation models — on ACME
+            alongside SCAND and MuSoHu. Both models perform considerably worse on ACME, demonstrating the dataset's
+            greater challenge for generalizable navigation policies.
+          </p>
+          <div style="overflow-x:auto;">
+            <table class="benchmark-table">
+              <thead>
+                <tr>
+                  <th class="model-col" rowspan="2">Model</th>
+                  <th rowspan="2">Dataset</th>
+                  <th>FDE (m)</th>
+                  <th>MSE</th>
+                  <th>Cosine Sim.</th>
+                  <th>MAOE (°)</th>
+                  <th>Mean AOE (°)</th>
+                  <th>Total AOE (°)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr class="section-header"><td colspan="8">ViNT</td></tr> -->
+                <tr>
+                  <td class="model-name" rowspan="3">ViNT</td>
+                  <td class="dataset-label">ACME</td>
+                  <td>0.85 ± 0.60</td><td>0.24 ± 0.30</td><td>0.95 ± 0.23</td>
+                  <td>12.58 ± 26.51</td><td>8.24 ± 19.93</td><td>41.22 ± 99.64</td>
+                </tr>
+                <tr>
+                  <td class="dataset-label">SCAND</td>
+                  <td>0.46 ± 0.52</td><td>0.11 ± 0.23</td><td>0.98 ± 0.13</td>
+                  <td>5.48 ± 15.47</td><td>3.68 ± 11.31</td><td>18.41 ± 56.53</td>
+                </tr>
+                <tr>
+                  <td class="dataset-label">MuSoHu</td>
+                  <td>0.83 ± 0.49</td><td>0.21 ± 0.34</td><td>0.96 ± 0.18</td>
+                  <td>14.39 ± 21.25</td><td>10.16 ± 16.26</td><td>50.80 ± 81.30</td>
+                </tr>
+                <!-- <tr class="section-header"><td colspan="8">NoMAD</td></tr> -->
+                <tr>
+                  <td class="model-name" rowspan="3">NoMAD</td>
+                  <td class="dataset-label">ACME</td>
+                  <td>1.44 ± 1.00</td><td>0.63 ± 0.77</td><td>0.93 ± 0.22</td>
+                  <td>20.68 ± 31.35</td><td>11.74 ± 19.75</td><td>93.88 ± 158.00</td>
+                </tr>
+                <tr>
+                  <td class="dataset-label">SCAND</td>
+                  <td>0.79 ± 0.92</td><td>0.30 ± 0.59</td><td>0.98 ± 0.12</td>
+                  <td>6.86 ± 16.39</td><td>4.11 ± 10.73</td><td>32.89 ± 85.83</td>
+                </tr>
+                <tr>
+                  <td class="dataset-label">MuSoHu</td>
+                  <td>1.53 ± 0.88</td><td>0.63 ± 0.77</td><td>0.94 ± 0.19</td>
+                  <td>18.83 ± 26.10</td><td>11.80 ± 17.27</td><td>94.42 ± 138.16</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
         </div>
       </div>
     </div>
@@ -521,14 +806,253 @@
       <div class="results-subsection">
         <h3 class="title is-4">Data Format</h3>
         <div class="content">
-          <!-- TODO: describe BEV video and trajectory annotation format. -->
+          <p>
+            Overhead Bird's-Eye-View (BEV) cameras were deployed at seven of the eight collection sites
+            (NUS, Miraikan, CMU, Keio, UMich, GMU, UBonn). The BEV pipeline proceeds in four stages:
+          </p>
+          <ol>
+            <li><strong>Automated tracking</strong> — ByteTrack detects and tracks all pedestrians at 10&nbsp;Hz from the BEV video feed.</li>
+            <li><strong>Human verification</strong> — Co-authors manually inspect and correct trajectories using a custom PyQt tool supporting relabel, break, join, delete, disentangle, and undo operations.</li>
+            <li><strong>Metric calibration</strong> — 2D-to-2D homography transforms (estimated via AprilTag markers or ground-truth keypoints) convert pixel coordinates to ground-plane metric coordinates.</li>
+            <li><strong>Post-processing &amp; distribution</strong> — Trajectories shorter than 3.2 s are discarded; noise jumps (&gt;5 m/s) are linearly interpolated or removed; trajectories are smoothed with a window of 5 frames; stationary segments are flagged. Final data is downsampled to <strong>2.5&nbsp;Hz</strong> and released in ETH/UCY-compatible <code>.txt</code> format for plug-in use with trajectory prediction models.</li>
+          </ol>
+
+          <p>
+            <strong>Anonymization</strong> varies by institution IRB requirements:
+          </p>
+          <div class="anon-samples-grid">
+            <div class="anon-sample-col">
+              <figure>
+                <img src="static/images/data/gmu_sample.jpg"
+                     alt="GMU sample — no anonymization" loading="lazy">
+              </figure>
+              <span class="anon-badge none">No anonymization (GMU, CMU)</span>
+            </div>
+            <div class="anon-sample-col">
+              <figure>
+                <img src="static/images/data/nus_sample.jpg"
+                     alt="NUS sample — face blurring" loading="lazy">
+              </figure>
+              <span class="anon-badge face">Face blurring (NUS, UMich, Keio)</span>
+            </div>
+            <div class="anon-sample-col">
+              <figure>
+                <img src="static/images/data/uex_sample.jpg"
+                     alt="UEx sample — full body segmentation" loading="lazy">
+              </figure>
+              <span class="anon-badge body">Full body segmentation (UEx, Miraikan, UBonn)</span>
+            </div>
+          </div>
+          <p>
+            To compensate for information loss from anonymization, bounding-box, segmentation-mask, and
+            pose-keypoint detections (YOLOv8 + ByteTrack) are included alongside each RGB frame.
+          </p>
+
+          <div class="analysis-figure-row" style="margin-top: 1.5rem;">
+            <figure>
+              <img src="static/images/data/qr_bev.png"
+                   alt="QR-code-based time synchronization between BEV and onboard data"
+                   loading="lazy">
+              <figcaption>QR codes encoding the current timestamp are displayed at session start to align BEV and onboard data streams post-hoc.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/data/BEV_tag_examples.png"
+                   alt="BEV semantic ground tags overlaid on pedestrian trajectories"
+                   loading="lazy">
+              <figcaption>Ground semantic tags overlaid on BEV pedestrian trajectories. Colors indicate: yellow = open space, blue = wide corridor, red = narrow corridor, green = intersection, orange = blind corner.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/data/Keio_pos_sync_anon.jpg"
+                   alt="AprilTag position synchronization between robot and BEV camera"
+                   loading="lazy">
+              <figcaption>Poster-sized AprilTags placed on the ground plane enable spatial calibration (homography estimation) between the BEV camera and world coordinates.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
       <div class="results-subsection">
         <h3 class="title is-4">Analysis</h3>
         <div class="content">
-          <!-- TODO: BEV / trajectory analysis figures from static/images/results/. -->
+
+          <!-- Trajectory statistics -->
+          <h4 class="culture-section-title">Trajectory Statistics vs. Prior Datasets</h4>
+          <p>
+            ACME contains <strong>72,058 human-verified pedestrian trajectories</strong> over 43.5 hours — roughly
+            4× longer and 7× more trajectories than the previously largest verified metric dataset (TBD).
+            It also spans the widest standard deviation in average speed (±0.75 m/s) and minimum interpersonal
+            distance (±4.76 m), reflecting the breadth of cultural and environmental contexts captured.
+          </p>
+          <div class="analysis-figure-row">
+            <figure>
+              <img src="static/images/results/BEV_traj_stat_a.png"
+                   alt="Tracking duration comparison across pedestrian trajectory datasets"
+                   loading="lazy">
+              <figcaption>Trajectory tracking duration (s) — ACME sits in the middle with high variance, driven by wandering and stationary pedestrians.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/results/BEV_traj_stat_b.png"
+                   alt="Average motion speed comparison across pedestrian trajectory datasets"
+                   loading="lazy">
+              <figcaption>Average motion speed (m/s) — ACME has the highest standard deviation across datasets, reflecting diverse pedestrian behaviors across cultures.</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/results/BEV_traj_stat_c.png"
+                   alt="Minimum distance between pedestrians across datasets"
+                   loading="lazy">
+              <figcaption>Minimum inter-pedestrian distance (m) — ACME shows the widest variance, reflecting crowd density differences across institutions and cultures.</figcaption>
+            </figure>
+          </div>
+
+          <!-- Trajectory prediction benchmark -->
+          <h4 class="culture-section-title">Trajectory Prediction Model Benchmark</h4>
+          <p>
+            Five state-of-the-art trajectory prediction models were trained on ETH/UCY and evaluated on both ETH/UCY
+            and ACME. While models improve progressively on ETH/UCY, performance on ACME degrades substantially for
+            newer models — indicating ACME captures more challenging and diverse human behavior that current models
+            fail to generalize to.
+          </p>
+          <div style="overflow-x:auto;">
+            <table class="benchmark-table">
+              <thead>
+                <tr>
+                  <th class="model-col">Model</th>
+                  <th colspan="2">ADE / FDE (m)</th>
+                </tr>
+                <tr>
+                  <th class="model-col"></th>
+                  <th>ETH/UCY</th>
+                  <th>ACME</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="model-name">SocialGAN</td>
+                  <td>0.34 / 0.71</td>
+                  <td>0.68 / 1.57</td>
+                </tr>
+                <tr>
+                  <td class="model-name">AgentFormer</td>
+                  <td>0.23 / 0.47</td>
+                  <td>0.75 / 2.12</td>
+                </tr>
+                <tr>
+                  <td class="model-name">SGNet</td>
+                  <td>0.22 / 0.48</td>
+                  <td>0.61 / 1.31</td>
+                </tr>
+                <tr>
+                  <td class="model-name">TUTR</td>
+                  <td>0.22 / 0.44</td>
+                  <td>1.30 / 2.73</td>
+                </tr>
+                <tr>
+                  <td class="model-name">MoFlow</td>
+                  <td>0.21 / 0.41</td>
+                  <td>1.97 / 2.03</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Cultural comparison: speed -->
+          <h4 class="culture-section-title">Cross-Cultural Comparison — Walking Speed</h4>
+          <p>
+            Pedestrian walking speed varies across locations. UBonn (Germany) and NUS (Singapore) show higher
+            average speeds, partly due to outdoor environments. Miraikan (Japan) pedestrians walk slower,
+            consistent with museum browsing behavior. High-density Asian locations (Miraikan, Keio) also show lower speeds.
+          </p>
+          <div class="culture-stack">
+            <figure class="culture-overall">
+              <img src="static/images/results/culture_overall_speed.png"
+                   alt="Overall speed distribution by institution" loading="lazy">
+              <figcaption>Overall speed (all environments)</figcaption>
+            </figure>
+            <div class="analysis-figure-row">
+              <figure>
+                <img src="static/images/results/culture_open_speed.png"
+                     alt="Speed in open areas" loading="lazy">
+                <figcaption>Open areas</figcaption>
+              </figure>
+              <figure>
+                <img src="static/images/results/culture_wide_speed.png"
+                     alt="Speed in wide corridors" loading="lazy">
+                <figcaption>Wide corridors</figcaption>
+              </figure>
+              <figure>
+                <img src="static/images/results/culture_narrow_speed.png"
+                     alt="Speed in narrow corridors" loading="lazy">
+                <figcaption>Narrow corridors</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Cultural comparison: passing side -->
+          <h4 class="culture-section-title">Cross-Cultural Comparison — Passing Side</h4>
+          <p>
+            Passing-side preferences correlate with each country's road driving side. US and German institutions
+            (UBonn, UMich, CMU, GMU) show a clear right-side passing tendency. Asian high-density locations
+            (Miraikan, Keio, NUS) show weaker lateral preferences, where lane-following and overtaking interactions
+            dominate over clear passing encounters.
+          </p>
+          <div class="culture-stack">
+            <figure class="culture-overall">
+              <img src="static/images/results/culture_overall_passing_side.png"
+                   alt="Overall passing side radial chart" loading="lazy">
+              <figcaption>Overall (all environments)</figcaption>
+            </figure>
+            <div class="analysis-figure-row">
+              <figure>
+                <img src="static/images/results/culture_open_side.png"
+                     alt="Passing side in open areas" loading="lazy">
+                <figcaption>Open areas</figcaption>
+              </figure>
+              <figure>
+                <img src="static/images/results/culture_wide_side.png"
+                     alt="Passing side in wide corridors" loading="lazy">
+                <figcaption>Wide corridors</figcaption>
+              </figure>
+              <figure>
+                <img src="static/images/results/culture_narrow_side.png"
+                     alt="Passing side in narrow corridors" loading="lazy">
+                <figcaption>Narrow corridors</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Cultural comparison: personal space -->
+          <h4 class="culture-section-title">Cross-Cultural Comparison — Personal Space</h4>
+          <p>
+            Personal space (average minimum approach distance) narrows laterally in corridor environments
+            across all cultures, suggesting pedestrians adapt to spatial constraints. Frontal personal space
+            in open areas is surprisingly consistent across countries, while US and Singapore locations
+            show slightly larger frontal personal space in corridor settings (~2.5 m).
+          </p>
+          <div class="culture-stack">
+            <figure class="culture-overall">
+              <img src="static/images/results/culture_overall_personal_space.png"
+                   alt="Overall personal space radial chart" loading="lazy">
+              <figcaption>Overall (all environments)</figcaption>
+            </figure>
+            <div class="analysis-figure-row">
+              <figure>
+                <img src="static/images/results/culture_open_space.png"
+                     alt="Personal space in open areas" loading="lazy">
+                <figcaption>Open areas</figcaption>
+              </figure>
+              <figure>
+                <img src="static/images/results/culture_wide_space.png"
+                     alt="Personal space in wide corridors" loading="lazy">
+                <figcaption>Wide corridors</figcaption>
+              </figure>
+              <figure>
+                <img src="static/images/results/culture_narrow_space.png"
+                     alt="Personal space in narrow corridors" loading="lazy">
+                <figcaption>Narrow corridors</figcaption>
+              </figure>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -553,8 +1077,7 @@
 
 
 
-<!-- DISABLED: BibTeX citation — uncomment to restore
-  <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -563,14 +1086,26 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2026,
-  title={ACME: A Multi-Cultural Multi-Embodiment Social Navigation Dataset},
-  author={ACME Collaboration},
+      <pre id="bibtex-code"><code>@article{marpally2026acme,
+  title={ACME: A Multi-Cultural, Multi-Embodiment Social-Navigation Dataset},
+  author={Marpally, Shashank Rao and Wang, Allan and Ghotavadekar, Atharva
+          and Ribeiro, Renato Alexandre and Le, Nhat and Bachiller-Burgos, Pilar
+          and Goyal, Pranav and Agrawal, Subham and Nitta, Yasuhiro
+          and Han, Howard Ziyu and Song, Daeun and Kuribayashi, Masaki
+          and Uehara, Kohei and Wang, Xiyue and Kong, Yangzhe and Nguyen, Aaron
+          and Payandeh, Amirreza and P{\'e}rez-Gonz{\'a}lez, Gerardo
+          and Torrej{\'o}n-Harto, Alejandro and Ahn, Jeeho and Jain, Tisha
+          and Stratton, Andrew and Yang, Elvin and de Heuvel, Jorge
+          and Ostermann-Myrau, Nico and Sajja, Sai Anudeep and Raj, Mithilya
+          and Sato, Daisuke and Rouquette, Gaston and Martelaro, Nikolas
+          and Sugimoto, Maki and Bennewitz, Maren and Takagi, Hironobu
+          and Asakawa, Chieko and Steinfeld, Aaron and Xiao, Xuesu
+          and Mavrogiannis, Christoforos and Soh, Harold},
+  journal={Under Review},
   year={2026}
 }</code></pre>
     </div>
 </section>
--->
 
 
   <footer class="footer">

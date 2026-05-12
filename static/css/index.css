@@ -297,17 +297,50 @@ body {
 }
 
 .dataset-sample-card {
-  background: var(--background-primary);
+  background: #000;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.dataset-sample-card .video-wrapper {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .dataset-sample-card video {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dataset-sample-logo-overlay {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  pointer-events: none;
+}
+
+.dataset-sample-logo-overlay img {
+  max-height: 28px;
+  max-width: 90px;
+  width: auto;
+  object-fit: contain;
+  filter:
+    drop-shadow(1px 0 0 rgba(255,255,255,0.8))
+    drop-shadow(-1px 0 0 rgba(255,255,255,0.8))
+    drop-shadow(0 1px 0 rgba(255,255,255,0.8))
+    drop-shadow(0 -1px 0 rgba(255,255,255,0.8))
+    drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
 /* Pagination and Misc Improvements */
@@ -897,4 +930,307 @@ a:focus {
   color: var(--text-primary);
   border-left: 4px solid var(--primary-color);
   padding-left: 0.75rem;
+}
+
+/* Dataset stats bar */
+.dataset-stats-section {
+  background: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.dataset-stats-section .hero-body {
+  padding: 2rem 1.5rem;
+}
+.dataset-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.stat-card {
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+.stat-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 768px) {
+  .dataset-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .dataset-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-value {
+    font-size: 1.3rem;
+  }
+}
+
+/* Dataset overview table */
+.dataset-overview-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+.dataset-overview-table th {
+  background: var(--background-accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+.dataset-overview-table td {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border-color);
+  vertical-align: top;
+  color: var(--text-secondary);
+}
+.dataset-overview-table tr:nth-child(even) td {
+  background: var(--background-secondary);
+}
+.dataset-overview-table .institution-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+/* Benchmark tables */
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+.benchmark-table th {
+  background: var(--background-accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+.benchmark-table th.model-col {
+  text-align: left;
+}
+.benchmark-table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+}
+.benchmark-table td.model-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+}
+.benchmark-table td.dataset-label {
+  font-style: italic;
+  color: var(--text-light);
+  padding-left: 1.25rem;
+}
+.benchmark-table tr:nth-child(even) td {
+  background: var(--background-secondary);
+}
+.benchmark-table .section-header td {
+  background: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+}
+
+/* Analysis figure groups */
+.analysis-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.analysis-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+.analysis-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+.analysis-figure-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: start;
+}
+.analysis-figure-row figure {
+  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.analysis-figure-row figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+.analysis-figure-row figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+.analysis-figure-row figure:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .analysis-figure-row {
+    grid-template-columns: 1fr;
+  }
+  .analysis-figure-row figure:last-child:nth-child(odd) {
+    max-width: 100%;
+  }
+}
+
+/* Speech analysis panels */
+.speech-analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: start;
+}
+.speech-analysis-grid figure {
+  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.speech-analysis-grid figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+.speech-analysis-grid figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+.speech-analysis-grid figure:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .speech-analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  .speech-analysis-grid figure:last-child:nth-child(odd) {
+    max-width: 100%;
+  }
+}
+
+/* Anonymization legend */
+.anon-samples-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.anon-sample-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+.anon-sample-col figure {
+  width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.anon-sample-col figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+.anon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+}
+.anon-badge.none   { background: #dcfce7; color: #166534; border-color: #86efac; }
+.anon-badge.face   { background: #fef9c3; color: #854d0e; border-color: #fde047; }
+.anon-badge.body   { background: #fee2e2; color: #991b1b; border-color: #fca5a5; }
+@media (max-width: 600px) {
+  .anon-samples-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cultural comparison section */
+.culture-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--border-color);
+}
+.culture-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.culture-overall {
+  text-align: center;
+  margin: 0;
+}
+.culture-overall img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+.culture-overall figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
 }
