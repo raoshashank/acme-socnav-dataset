@@ -1083,8 +1083,9 @@ a:focus {
 }
 .analysis-figure-row figure {
   text-align: center;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
+  padding: 0;
+  align-self: start;
 }
 .analysis-figure-row figure img {
   max-width: 100%;
@@ -1122,8 +1123,9 @@ a:focus {
 }
 .speech-analysis-grid figure {
   text-align: center;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
+  padding: 0;
+  align-self: start;
 }
 .speech-analysis-grid figure img {
   max-width: 100%;
