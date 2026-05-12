@@ -1066,9 +1066,7 @@ a:focus {
 .analysis-figure img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  mix-blend-mode: multiply;
 }
 .analysis-figure figcaption {
   margin-top: 0.6rem;
@@ -1091,9 +1089,7 @@ a:focus {
 .analysis-figure-row figure img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  mix-blend-mode: multiply;
 }
 .analysis-figure-row figure figcaption {
   margin-top: 0.5rem;
@@ -1132,9 +1128,7 @@ a:focus {
 .speech-analysis-grid figure img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  mix-blend-mode: multiply;
 }
 .speech-analysis-grid figure figcaption {
   margin-top: 0.5rem;
@@ -1179,9 +1173,7 @@ a:focus {
 .anon-sample-col figure img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  mix-blend-mode: multiply;
 }
 .anon-badge {
   display: inline-flex;
@@ -1224,9 +1216,7 @@ a:focus {
 .culture-overall img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  mix-blend-mode: multiply;
 }
 .culture-overall figcaption {
   margin-top: 0.4rem;
