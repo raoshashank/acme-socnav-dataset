@@ -1101,8 +1101,8 @@ a:focus {
 .analysis-figure-row figure:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 @media (max-width: 768px) {
   .analysis-figure-row {
@@ -1141,8 +1141,8 @@ a:focus {
 .speech-analysis-grid figure:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 @media (max-width: 768px) {
   .speech-analysis-grid {
