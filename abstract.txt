@@ -1,0 +1,13 @@
+Understanding how robots and humans move in shared spaces is essential for designing effective social navigation
+policies and predicting human behavior. However, existing datasets often lack the diversity needed to capture
+differences in culture, geography, and human-robot interaction—factors that strongly shape appropriate social behavior.
+To address this gap, we introduce ACME, the first multi-cultural and multi-embodiment social navigation and pedestrian
+trajectory prediction dataset and benchmark. A data collection effort across 8 universities in 5 countries, using 7
+robot embodiments, ACME is a large and diverse multi-modal dataset aimed at advancing social navigation research.
+Unlike prior datasets, it focuses on capturing goal-driven social navigation behavior in challenging social scenarios
+with explicit robot-crowd interaction through robot speech. To facilitate learning navigation policies and predicting
+pedestrian trajectories, ACME provides 3D and 2D scene features, odometry, interaction information, and human-
+annotated pedestrian trajectory labels. We make ACME easy to use by providing both human-readable data for each
+sensor modality as well as raw binary data. Our qualitative and quantitative analyses show that our dataset captures
+more challenging scenarios and a larger and diverse distribution of pedestrian behavior when compared to previous
+datasets.

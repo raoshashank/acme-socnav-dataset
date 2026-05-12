@@ -119,6 +119,20 @@ function setupVideoCarouselAutoplay() {
     });
 }
 
+function toggleAuthors(event) {
+    event.stopPropagation();
+    const el = event.currentTarget;
+    const expanded = el.classList.toggle('expanded');
+    el.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+}
+
+function handleAuthorsKey(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleAuthors(event);
+    }
+}
+
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
 
