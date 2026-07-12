@@ -364,11 +364,17 @@
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
       <!-- <h2 class="title is-3">Collaboration Map</h2> -->
-      <figure class="collaboration-map-figure">
-        <img src="static/images/data/collaboration_map_new.png"
-             alt="ACME collaboration map" loading="lazy">
-        <!-- TODO: optional figcaption text -->
-      </figure>
+      <div class="collaboration-map-row">
+        <figure class="collaboration-map-figure">
+          <img src="static/images/data/collaboration_map_new.png"
+               alt="ACME collaboration map" loading="lazy">
+          <!-- TODO: optional figcaption text -->
+        </figure>
+        <figure class="collaboration-map-figure">
+          <img src="static/images/data/collaboration_map_bev.png"
+               alt="ACME collaboration map — BEV camera coverage" loading="lazy">
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -823,7 +829,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">BEV Videos and Pedestrian GT Annotated Trajectories</h2>
 
-      <div class="dataset-samples-grid" style="margin-bottom: 2rem;">
+      <div class="dataset-samples-grid is-centered-last" style="margin-bottom: 2rem;">
         <div class="dataset-sample-card">
           <div class="video-wrapper">
             <video autoplay muted loop playsinline preload="metadata" title="CMU BEV sample" aria-label="CMU BEV sample">
@@ -936,6 +942,23 @@
               <span class="anon-badge body">Full body segmentation (UEx, Miraikan, UBonn)</span>
             </div>
           </div>
+          <div class="analysis-figure-row" style="margin-top: 1.5rem;">
+            <figure>
+              <video autoplay muted loop playsinline preload="metadata" title="UEx unannotated sample" aria-label="UEx unannotated sample">
+                <source src="static/videos/anonymization_annotation/uex_unannotated.mp4" type="video/mp4">
+              </video>
+              <figcaption>Unannotated</figcaption>
+            </figure>
+            <figure>
+              <video autoplay muted loop playsinline preload="metadata" title="UEx annotated sample" aria-label="UEx annotated sample">
+                <source src="static/videos/anonymization_annotation/uex_annotated.mp4" type="video/mp4">
+              </video>
+              <figcaption>Annotated</figcaption>
+            </figure>
+          </div>
+          <p class="has-text-centered anon-annotation-caption">
+            Pedestrian Masks, Bounding Boxes and Keypoints provided for maximum data utility within privacy regulations.
+          </p>
           <p>
             To compensate for information loss from anonymization, bounding-box, segmentation-mask, and
             pose-keypoint detections (YOLOv8 + ByteTrack) are included alongside each RGB frame.
