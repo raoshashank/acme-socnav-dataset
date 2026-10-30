@@ -82,6 +82,11 @@ body {
     margin: 8px 4px;
 }
 
+.hugging-face-logo {
+  width: 1.25em;
+  height: 1.25em;
+}
+
 .dnerf {
   font-variant: small-caps;
 }
